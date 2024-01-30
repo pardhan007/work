@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/0775edd99d.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <!-- 1st row -->
+        <div class="first">
+            <select name="platform">
+                <option value="" disabled selected>Select Platform</option>
+                <option value="email">Email</option>
+                <option value="mobile">Mobile No.</option>
+            </select>
+            <i class="fa-solid fa-user fa-xl"></i>
+        </div>
+
+        <!-- 2nd row -->
+
+        <div class="second">
+            <select name="emailPool">
+                <option value="" disabled selected>Select Email Pool</option>
+                <option value="non">Non-Verified User</option>
+                <option value="verified">Verified User</option>
+            </select>
+            <select name="country">
+                <option value="" disabled selected>Country-India</option>
+                <!-- <option value=""></option> -->
+            </select>
+            <select name="state">
+                <option value="" disabled selected>State</option>
+                <option value="">Haryana</option>
+            </select>
+            <select name="city">
+                <option value="" disabled selected>City</option>
+                <option value="gurugram">Gurugram</option>
+                <option value="faridabad">Faridabad</option>
+            </select>
+        </div>
+
+        <!-- 3rd row -->
+
+        <div>
+            <form class="second">
+                <select name="emailPool">
+                    <option value="" disabled selected>Category</option>
+                    <!-- <option value=""></option> -->
+                </select>
+                <select name="country">
+                    <option value="" disabled selected>Sub Category</option>
+                    <!-- <option value=""></option> -->
+                </select>
+                <select name="state">
+                    <option value="" disabled selected>Email Pool Size</option>
+                    <option value="">1 Million</option>
+                    <option value="">2 Million</option>
+                    <option value="">More than 2 Million</option>
+                </select>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+
+        <!-- 4th row -->
+
+        <div class="fourth">
+            <i class="fa-solid fa-wifi fa-2xl"></i>
+            <p>Estimated Email Reach</p>
+            <p>3.4M Verified email</p>
+        </div>
+
+        <!-- 5th row -->
+
+        <div class="fifth">
+            <div>
+                <button>Add HTML</button>
+                <i class="fa-solid fa-chevron-down fa-xl"></i>
+            </div>
+            <input type="submit" value="Send" />
+        </div>
+        <div class="html-input">
+            <div class="html-input-inside">
+                <h2>HTML Code</h2>
+                <textarea id="htmlInput" placeholder="Enter HTML" class="input-box" rows="25" /></textarea>
+            </div>
+            <div id="htmlPreview" class="preview-box"><h2>Email Preview</h2></div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.first {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+select {
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+form.second input[type="submit"] {
+    background-color: #4064f6;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+form.second input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 8px 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #dbe2ff;
+}
+
+.fourth {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 100px;
+}
+.fourth p {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.fifth {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.fifth input[type="submit"] {
+    background-color: #4064f6;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.html-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.preview-box {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-left: 10px;
+    overflow-y: auto;
+}
+
+.html-input-inside {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.html-input-inside h2 {
+    margin-left: 10px;
+}
