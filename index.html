@@ -4,23 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <script src="https://kit.fontawesome.com/0775edd99d.js" crossorigin="anonymous"></script>
-        <title>Document</title>
+        <script
+            src="https://kit.fontawesome.com/0775edd99d.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Email Campaign</title>
     </head>
     <body>
-        
         <!-- 1st row -->
         <div class="first">
-            <select name="platform">
-                <option value="" disabled selected>Select Platform</option>
-                <option value="email">Email</option>
-                <option value="mobile">Mobile No.</option>
-            </select>
-            <i class="fa-solid fa-user fa-xl"></i>
+            <h1 style="color: #7458ff">BrandName</h1>
+            <div style="display: flex; align-items: center; gap: 1rem">
+                <select name="platform">
+                    <option value="" disabled selected>Select Platform</option>
+                    <option value="email">Email</option>
+                    <option value="mobile">Mobile No.</option>
+                </select>
+                <div
+                    style="
+                        border: 1px solid black;
+                        border-radius: 50%;
+                        padding: 0.6rem;
+                        color: #7458ff;
+                    "
+                >
+                    <i class="fa-solid fa-user fa-xl"></i>
+                </div>
+            </div>
         </div>
 
         <!-- 2nd row -->
-
         <div class="second">
             <select name="emailPool">
                 <option value="" disabled selected>Select Email Pool</option>
@@ -28,66 +41,111 @@
                 <option value="verified">Verified User</option>
             </select>
             <select name="country">
-                <option value="" disabled selected>Country-India</option>
-                <!-- <option value=""></option> -->
+                <option value="" disabled selected>Country - India</option>
+                <option value="india">India</option>
+                <!-- Add more countries as needed -->
             </select>
             <select name="state">
                 <option value="" disabled selected>State</option>
-                <option value="">Haryana</option>
+                <option value="haryana">Haryana</option>
+                <!-- Add more states as needed -->
             </select>
             <select name="city">
                 <option value="" disabled selected>City</option>
                 <option value="gurugram">Gurugram</option>
                 <option value="faridabad">Faridabad</option>
+                <!-- Add more cities as needed -->
             </select>
         </div>
 
         <!-- 3rd row -->
-
-        <div>
-            <form class="second">
-                <select name="emailPool">
-                    <option value="" disabled selected>Category</option>
-                    <!-- <option value=""></option> -->
-                </select>
-                <select name="country">
-                    <option value="" disabled selected>Sub Category</option>
-                    <!-- <option value=""></option> -->
-                </select>
-                <select name="state">
-                    <option value="" disabled selected>Email Pool Size</option>
-                    <option value="">1 Million</option>
-                    <option value="">2 Million</option>
-                    <option value="">More than 2 Million</option>
-                </select>
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
+        <form class="third">
+            <select name="category">
+                <option value="" disabled selected>Category</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <select name="subCategory">
+                <option value="" disabled selected>Sub Category</option>
+                <!-- Add more subcategories as needed -->
+            </select>
+            <select name="emailPoolSize">
+                <option value="" disabled selected>Email Pool Size</option>
+                <option value="1M">1 Million</option>
+                <option value="2M">2 Million</option>
+                <option value="moreThan2M">More than 2 Million</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
 
         <!-- 4th row -->
-
         <div class="fourth">
             <i class="fa-solid fa-wifi fa-2xl"></i>
-            <p>Estimated Email Reach</p>
-            <p>3.4M Verified email</p>
+            <!-- <div style="display: flex; justify-content: center; align-items: center; gap: 3rem;"> -->
+            <h2 style="color: #7458ff; font-size: 2rem">
+                Estimated Email Reach
+            </h2>
+            <!-- </div> -->
+            <div class="email-reach-content">
+                <span class="email-reach-number">3.4M</span>
+                <span class="email-reach-text">Verified emails</span>
+            </div>
         </div>
 
         <!-- 5th row -->
-
         <div class="fifth">
-            <div>
-                <button>Add HTML</button>
-                <i class="fa-solid fa-chevron-down fa-xl"></i>
-            </div>
-            <input type="submit" value="Send" />
+            <!-- <button>Add HTML</button> -->
+            <!-- <i class="fa-solid fa-chevron-down fa-xl"></i> -->
+            <!-- <input type="submit" value="Send" /> -->
         </div>
+
         <div class="html-input">
             <div class="html-input-inside">
-                <h2>HTML Code</h2>
-                <textarea id="htmlInput" placeholder="Enter HTML" class="input-box" rows="25" /></textarea>
+                <div
+                    style="
+                        background-color: #eeedeb;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                    "
+                >
+                    <h2 style="color: #3c3633">HTML Code</h2>
+                </div>
+                <textarea
+                    id="htmlInput"
+                    placeholder="Enter HTML"
+                    class="input-box"
+                    rows="25"
+                ></textarea>
             </div>
-            <div id="htmlPreview" class="preview-box"><h2>Email Preview</h2></div>
+            <div id="htmlPreview" class="preview-box">
+                <div
+                    style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: #eeedeb;
+                        padding: 0px 20px;
+                    "
+                >
+                    <h2 style="margin-left: 10px; color: #3c3633">
+                        Email Preview
+                    </h2>
+                    <input
+                        style="
+                            display: flex;
+                            background-color: #4064f6;
+                            color: white;
+                            /* padding: 1px 25px; */
+                            border: none;
+                            cursor: pointer;
+                            border-radius: 10px;
+                            font-weight: 800;
+                        "
+                        type="submit"
+                        value="Send"
+                    />
+                </div>
+                <textarea id="htmlInput" class="input-box" rows="25"></textarea>
+            </div>
         </div>
-        
     </body>
 </html>
